@@ -1,20 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
+import Bai1 from "./Components/Bai1";
+import Bai2 from "./Components/Bai2";
+import Bai3 from "./Components/Bai3";
+import Bai4 from "./Components/Bai4";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View className="flex-1 m-auto mt-20">
+      <StatusBar />
+      <Text className="text-xl text-center font-bold">Animations</Text>
+      <ScrollView className="w-full">
+        <Bai1 />
+        <Bai2 />
+        <Bai3 />
+        <Bai4 />
+      </ScrollView>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
