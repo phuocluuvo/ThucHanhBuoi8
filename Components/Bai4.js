@@ -24,7 +24,7 @@ export default function Bai4() {
       <Animated.View style={{ opacity: fadeIn }}>
         <Image className="m-auto" source={require("../assets/mark.jpg")} />
       </Animated.View>
-      <Animated.View style={{ marginRight: toLeft }}>
+      <Animated.View style={{ marginLeft: toLeft }}>
         <Text className="text-xl">Nà ní :v</Text>
       </Animated.View>
 
